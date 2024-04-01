@@ -23,15 +23,16 @@ public class InteractVisual : MonoBehaviour
 
     private void Update()
     {
-        if(isHolding)
-        {
-            holdTimer += Time.deltaTime;
-            fillCircle.fillAmount = holdTimer / holdDuration;
-            if (holdTimer >= holdDuration)
+            if (isHolding)
             {
-              //do something? not sure if it has to
+                holdTimer += Time.deltaTime;
+                fillCircle.fillAmount = holdTimer / holdDuration;
+                if (holdTimer >= holdDuration)
+                {
+                    //normally put something here to do an action but in this case that is not neccesary since its purely a visual indicator
+                }
             }
-        }
+        
     }
 
     public void onHold(InputAction.CallbackContext context)
