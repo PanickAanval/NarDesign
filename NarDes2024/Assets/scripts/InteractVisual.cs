@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 
 public class InteractVisual : MonoBehaviour
 {
+   // public TaskKeeper keeper;
     public Interactor interactor;
 
     public float holdDuration;
@@ -19,11 +20,34 @@ public class InteractVisual : MonoBehaviour
     private void Start()
     {
         holdDuration = interactor.timeBetweenTimers;
+
+        if (holdDuration != 15f)
+        {
+            holdDuration = 15f;
+        }
+
+        GameObject.Find("keeper");
+        TaskKeeper.keeper.GetComponent<TaskKeeper>();
     }
 
     private void Update()
     {
-            if (isHolding)
+        if (TaskKeeper.keeper.InteractTimerIncreases == 1)
+        {
+            if (holdDuration != 20f)
+            {
+                holdDuration = 20f;
+            }
+        }
+        if (TaskKeeper.keeper.InteractTimerIncreases == 2)
+        {
+            if (holdDuration != 25f)
+            {
+                holdDuration = 25f;
+            }
+        }
+
+        if (isHolding)
             {
                 holdTimer += Time.deltaTime;
                 fillCircle.fillAmount = holdTimer / holdDuration;

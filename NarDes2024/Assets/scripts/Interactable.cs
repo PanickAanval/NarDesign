@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class Interactable : MonoBehaviour
 {
     public TaskList tasks;
-    public TaskKeeper keeper;
+    //public TaskKeeper keeper;
 
     public UnityEvent OnInteract;
     public Sprite interactIcon;
@@ -40,7 +40,7 @@ public class Interactable : MonoBehaviour
 
     private void Update()
     {
-        if(keeper.DidPan1 == 1 && keeper.DidPan2 < 1)
+        if(TaskKeeper.keeper.DidPan1 == 1 && TaskKeeper.keeper.DidPan2 < 1)
         {
          // Debug.Log(timer);
             if(timer > 0)
@@ -66,15 +66,15 @@ public class Interactable : MonoBehaviour
 
         if (name == "PhoneSource")
         {
-            keeper.DidPhone = 1;
-            keeper.PlayerCalledMom = keeper.PlayerCalledMom + 1;
+            TaskKeeper.keeper.DidPhone = 1;
+            TaskKeeper.keeper.PlayerCalledMom = TaskKeeper.keeper.PlayerCalledMom + 1;
             tasks.Tasks.Remove("CallMom");
             tasks.callMom.SetActive(true);
             CallComplete.SetActive(true);
         }
         if (name == "CatSource")
         {
-            keeper.DidCat = 1;
+            TaskKeeper.keeper.DidCat = 1;
 
             tasks.Tasks.Remove("FeedCat");
             tasks.feedCat.SetActive(true);
@@ -85,7 +85,7 @@ public class Interactable : MonoBehaviour
 
 
 
-            keeper.DidPan1 = 1;
+            TaskKeeper.keeper.DidPan1 = 1;
 
             tasks.Tasks.Remove("OnStove");
             tasks.onStove.SetActive(true);
@@ -102,7 +102,7 @@ public class Interactable : MonoBehaviour
             if (name == "PanSource2")
             {
                 Debug.Log("Hello");
-                keeper.DidPan2 = 1;
+                TaskKeeper.keeper.DidPan2 = 1;
 
                 PanNew.SetActive(false);
                 PanBox.SetActive(false);
@@ -113,7 +113,7 @@ public class Interactable : MonoBehaviour
         
         if (name == "DishseSource") 
         {
-            keeper.DidDishes = 1;
+            TaskKeeper.keeper.DidDishes = 1;
 
             tasks.Tasks.Remove("DoDishes");
             tasks.doDishes.SetActive(true);
@@ -121,7 +121,7 @@ public class Interactable : MonoBehaviour
         }
         if (name == "BedSource")
         {
-            keeper.DidBed = 1;
+            TaskKeeper.keeper.DidBed = 1;
 
             tasks.Tasks.Remove("MakeBed");
             tasks.makeBed.SetActive(true);
@@ -129,7 +129,7 @@ public class Interactable : MonoBehaviour
         }
         if (name == "ComSource")
         {
-            keeper.DidCom = 1;
+           TaskKeeper.keeper.DidCom = 1;
 
             tasks.Tasks.Remove("PayBills");
             tasks.payBills.SetActive(true);
@@ -137,7 +137,7 @@ public class Interactable : MonoBehaviour
         }
         if (name == "FireSource")
         {
-            keeper.DidFire = 1;
+            TaskKeeper.keeper.DidFire = 1;
 
             tasks.Tasks.Remove("FireAlarm");
             tasks.fireAlarm.SetActive(true);
@@ -145,7 +145,7 @@ public class Interactable : MonoBehaviour
         }
         if (name == "DoorSource")
         {
-            keeper.DidDoor = 1;
+            TaskKeeper.keeper.DidDoor = 1;
 
             tasks.Tasks.Remove("BuyPresent");
             tasks.buyPresent.SetActive(true);

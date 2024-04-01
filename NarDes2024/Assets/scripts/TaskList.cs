@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TaskList : MonoBehaviour
 {
-    public TaskKeeper taskKeeper;
+    //public TaskKeeper keeper;
 
     public List<string> Tasks = new List<string>();
 
@@ -36,7 +36,7 @@ public class TaskList : MonoBehaviour
         Tasks.Add("FireAlarm");
         Tasks.Add("BuyPresent");
 
-        if(taskKeeper.OffStoveGetsRemovedFaster == 1)
+        if(TaskKeeper.keeper.OffStoveGetsRemovedFaster == 1)
         {
             RemoveOffStove();
         }

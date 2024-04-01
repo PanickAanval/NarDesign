@@ -7,8 +7,6 @@ public class TaskKeeper : MonoBehaviour
 {
     public static TaskKeeper keeper;
 
-    public Interactor interactor;
-    public InteractVisual visuals;
     public float InteractTimerIncreases;
 
     public float DidPhone;
@@ -37,8 +35,8 @@ public class TaskKeeper : MonoBehaviour
 
      void Awake()
     {
-        OnlyKeeper();
 
+        OnlyKeeper();
        
     }
 
@@ -53,48 +51,14 @@ public class TaskKeeper : MonoBehaviour
     {
         Debug.Log("OnSceneLoaded:" + scene.name);
 
-        if(interactor.GetComponent<Interactor>() == null)
-        {
-            GameObject.Find("PlayerCam");
-            interactor.GetComponent<Interactor>();
-        }
-
-        if(visuals.GetComponent<InteractVisual>() == null)
-        {
-            GameObject.Find("TaskCanvas");
-            visuals.GetComponent<InteractVisual>();
-        }
-
-        
-
-        if (interactor.timeBetweenTimers != 15f)
-        {
-            interactor.timeBetweenTimers = 15f;
-        }
-
-        if (visuals.holdDuration != 15f)
-        {
-            visuals.holdDuration = 15f;
-        }
-
        // Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "Day2Check")
         {
             if (DidPhone == 0 || DidPan1 == 0 || DidDishes == 0 || DidBed == 0)
             {
                 //timer for tasks becomes longer
-                interactor.timeBetweenTimers = 40f;
                 InteractTimerIncreases = InteractTimerIncreases + 1;
 
-                if (interactor.timeBetweenTimers != 20f)
-                {
-                    interactor.timeBetweenTimers = 20f;
-                }
-
-                if (visuals.holdDuration != 20f)
-                {
-                    visuals.holdDuration = 20f;
-                }
             }
             if (DidPan2 == 0 || DidCom == 0 || DidCat == 0)
             {
@@ -127,37 +91,9 @@ public class TaskKeeper : MonoBehaviour
         {
             if (DidPhone == 0 || DidPan1 == 0 || DidDishes == 0 || DidBed == 0)
             {
-                InteractTimerIncreases = InteractTimerIncreases + 1;
-
                 //timer for tasks becomes longer
-                if (InteractTimerIncreases == 1)
-                {
-                    interactor.timeBetweenTimers = 20f;
-
-                    if (interactor.timeBetweenTimers != 20f)
-                    {
-                        interactor.timeBetweenTimers = 20f;
-                    }
-
-                    if (visuals.holdDuration != 20f)
-                    {
-                        visuals.holdDuration = 20f;
-                    }
-                }
-                if (InteractTimerIncreases == 2)
-                {
-                    interactor.timeBetweenTimers = 25f;
-
-                    if (interactor.timeBetweenTimers != 25f)
-                    {
-                        interactor.timeBetweenTimers = 25f;
-                    }
-
-                    if (visuals.holdDuration != 25f)
-                    {
-                        visuals.holdDuration = 25f;
-                    }
-                }
+                InteractTimerIncreases = InteractTimerIncreases + 1; 
+                
             }
 
             if (DidPan2 == 0)
@@ -258,8 +194,6 @@ public class TaskKeeper : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-
-
     void OnlyKeeper()
     {
         if (keeper == null)
@@ -275,5 +209,7 @@ public class TaskKeeper : MonoBehaviour
             }
         }
     }
+
+
 
 }

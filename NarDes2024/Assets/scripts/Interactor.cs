@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Interactor : MonoBehaviour
 {
+   // public TaskKeeper keeper;
+
     public LayerMask interactableLayerMask = 8;
 
     public Interactable interactable;
@@ -21,10 +23,34 @@ public class Interactor : MonoBehaviour
     private void Start()
     {
         circle.SetActive(false);
+
+        if (timeBetweenTimers != 15f)
+        {
+            timeBetweenTimers = 15f;
+        }
+
+        GameObject.Find("keeper");
+        TaskKeeper.keeper.GetComponent<TaskKeeper>();
     }
 
     private void Update()
     {
+
+        if(TaskKeeper.keeper.InteractTimerIncreases == 1)
+        {
+            if (timeBetweenTimers != 20f)
+            {
+                timeBetweenTimers = 20f;
+            }
+        }
+        if(TaskKeeper.keeper.InteractTimerIncreases == 2)
+        {
+            if (timeBetweenTimers != 25f)
+            {
+                timeBetweenTimers = 25f;
+            }
+        }
+
         RaycastHit hit;
 
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 2, interactableLayerMask))
