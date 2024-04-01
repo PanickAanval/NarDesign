@@ -9,7 +9,7 @@ public class LevelTimer : MonoBehaviour
 {
     public float TimeLeft = 240;
 
-  //  public string NextScene;
+    public string NextScene;
 
     public TextMeshProUGUI TimerText;
 
@@ -29,7 +29,7 @@ public class LevelTimer : MonoBehaviour
         {
             TimeLeft = 0;
             TimerText.text = "0";
-            //go to next scene
+            SceneManager.LoadScene(NextScene);
         }
     }
 

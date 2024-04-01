@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TaskList : MonoBehaviour
-{ 
+{
+    public TaskKeeper taskKeeper;
+
     public List<string> Tasks = new List<string>();
 
     public float TimeLeft = 40;
+    float SpecialTimer = 20;
 
     public GameObject onStove;
     public GameObject offStove;
@@ -20,6 +23,9 @@ public class TaskList : MonoBehaviour
 
     void Start()
     {
+        GameObject.Find("keeper");
+        TaskKeeper.keeper.GetComponent<TaskKeeper>();
+
         Tasks.Add("OnStove");
         Tasks.Add("OffStove");
         Tasks.Add("FeedCat");
@@ -29,6 +35,13 @@ public class TaskList : MonoBehaviour
         Tasks.Add("PayBills");
         Tasks.Add("FireAlarm");
         Tasks.Add("BuyPresent");
+
+        if(taskKeeper.OffStoveGetsRemovedFaster == 1)
+        {
+            RemoveOffStove();
+        }
+
+        Tasks.Add("InCaseOfAllTasksGone");
     }
 
     void PickRandomRemove(List<string> listToRandomize)
@@ -40,6 +53,11 @@ public class TaskList : MonoBehaviour
             int randomNum = Random.Range(0, listToRandomize.Count);
             string printRandom = listToRandomize[randomNum];
             print(printRandom);
+
+            if(printRandom == "InCaseOfAllTasksGone")
+            {
+                Tasks.Add("InCaseOfAllTasksGone");
+            }
 
             Tasks.Remove(printRandom);
 
@@ -94,7 +112,7 @@ public class TaskList : MonoBehaviour
         }
         else
         {
-            TimeLeft = 40;
+            TimeLeft = 20;
             PickRandomRemove(Tasks);
         }
     }
@@ -107,5 +125,17 @@ public class TaskList : MonoBehaviour
         float seconds = Mathf.FloorToInt(CurrentTime % 60);
     }
 
-
+    public void RemoveOffStove()
+    {
+        if (SpecialTimer > 0)
+        {
+            SpecialTimer -= Time.deltaTime;
+            UpdateTimer(SpecialTimer);
+        }
+        else
+        {
+            Tasks.Remove("OffStove");
+            offStove.SetActive(false);
+        }
+    }
 }

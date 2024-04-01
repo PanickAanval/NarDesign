@@ -4,5 +4,50 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Day1.unity
+    guid: 39c19e3a47d8e324aa426cbb57028fde
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Day1EndAlternative.unity
+    guid: ca8db256daa8dcc4d81c61d82d5e18b7
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Day1EndNormal.unity
+    guid: 3d4699ed102af0c46b1a7edfe959ecfc
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Day2.unity
+    guid: 122dfa8a6bbec5d4ebec0cf6f3811073
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Day2Check.unity
+    guid: 2fd99282a1387694b836c6192ae074a1
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Day2EndNormal.unity
+    guid: 7f437fe3619415f47a99e2a8ba78767d
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Day3.unity
+    guid: c8382521c39ee254284650c14e0a05c7
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Day3Check.unity
+    guid: c2ced3b067ddec14ab81d61a5a60f248
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Day4Check.unity
+    guid: 99843b8ade2e7b74d9977fec5755f3d6
+  - enabled: 1
+    path: Assets/Scenes/Endings/EvictionEnding.unity
+    guid: 357b0955846029d45bde81c076d86178
+  - enabled: 1
+    path: Assets/Scenes/Endings/FireEnding.unity
+    guid: 7da6a200c78cb8243b381d07530883ba
+  - enabled: 1
+    path: Assets/Scenes/Endings/GoodEnding.unity
+    guid: 54c8421f6389fe4449c2a70621f7f3b4
+  - enabled: 1
+    path: Assets/Scenes/Endings/NeutralEnding.unity
+    guid: 08b9b7e5546d3534b91ee79c6d614d06
+  - enabled: 1
+    path: Assets/Scenes/Endings/NoMomEnding.unity
+    guid: caeb5eae17182b34a9e7d5316997a205
+  - enabled: 1
+    path: Assets/Scenes/Endings/NoPresentEnding.unity
+    guid: 19064f0c7a62d5944a065f219c38c460
   m_configObjects: {}

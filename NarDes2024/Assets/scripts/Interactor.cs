@@ -14,7 +14,7 @@ public class Interactor : MonoBehaviour
 
     float timer1 = 0f;
     float timer2 = 0f;
-    public float timeBetweenTimers = 20f;
+    public float timeBetweenTimers = 15f;
 
     public GameObject circle;
 
@@ -29,7 +29,7 @@ public class Interactor : MonoBehaviour
 
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 2, interactableLayerMask))
         {
-            Debug.Log("hi");
+            
             circle.SetActive(true);
             if (hit.collider.GetComponent<Interactable>() != false)
             {

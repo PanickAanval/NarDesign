@@ -15,6 +15,8 @@ public class Interactable : MonoBehaviour
     public GameObject This;
 
     public GameObject Pan;
+    public GameObject PanNew;
+    public GameObject PanBox;
 
     public GameObject CallComplete;
     public GameObject CatComplete;
@@ -25,11 +27,33 @@ public class Interactable : MonoBehaviour
     public GameObject ComComplete;
     public GameObject FireCompelte;
     public GameObject DoorComplete;
-   
+
+    float timer = 30;
 
     void Start()
     {
         ID = Random.Range(0, 999999);
+
+        GameObject.Find("keeper");
+        TaskKeeper.keeper.GetComponent<TaskKeeper>();
+    }
+
+    private void Update()
+    {
+        if(keeper.DidPan1 == 1 && keeper.DidPan2 < 1)
+        {
+         // Debug.Log(timer);
+            if(timer > 0)
+            {
+                timer -= Time.deltaTime;
+                UpdateTimer(timer);
+            }
+    else
+            {
+                Debug.Log("Pan Is Ready");
+                PanBox.SetActive(true);
+            }
+        }
     }
 
     public void TaskDone()
@@ -43,7 +67,7 @@ public class Interactable : MonoBehaviour
         if (name == "PhoneSource")
         {
             keeper.DidPhone = 1;
-
+            keeper.PlayerCalledMom = keeper.PlayerCalledMom + 1;
             tasks.Tasks.Remove("CallMom");
             tasks.callMom.SetActive(true);
             CallComplete.SetActive(true);
@@ -58,36 +82,36 @@ public class Interactable : MonoBehaviour
         }
         if (name == "PanSource")
         {
-            float timer = 30;
-            if (keeper.DidPan1 == 0)
+
+
+
+            keeper.DidPan1 = 1;
+
+            tasks.Tasks.Remove("OnStove");
+            tasks.onStove.SetActive(true);
+            OnStoveComplete.SetActive(true);
+
+            Pan.SetActive(false);
+            This.SetActive(false);
+
+            PanNew.SetActive(true);
+            PanBox.SetActive(false);
+
+        }
+
+            if (name == "PanSource2")
             {
-                keeper.DidPan1 = 1;
-
-                tasks.Tasks.Remove("OnStove");
-                tasks.onStove.SetActive(true);
-                OnStoveComplete.SetActive(true);
-
-                timer += Time.deltaTime;
-
-                Pan.SetActive(false);
-            }
-            
-            if(timer <= 0)
-            {
-                Pan.SetActive(true);
-                This.SetActive(true);
-            }
-
-            if(keeper.DidPan1 == 1)
-            {
+                Debug.Log("Hello");
                 keeper.DidPan2 = 1;
 
+                PanNew.SetActive(false);
+                PanBox.SetActive(false);
                 tasks.Tasks.Remove("OffStove");
                 tasks.offStove.SetActive(true);
                 OffStoveComplete.SetActive(true);
             }
-        }
-        if (name == "DishesSource")
+        
+        if (name == "DishseSource") 
         {
             keeper.DidDishes = 1;
 
@@ -129,5 +153,11 @@ public class Interactable : MonoBehaviour
         }
     }
 
+    void UpdateTimer(float CurrentTime)
+    {
+        CurrentTime += 1;
 
+        float minutes = Mathf.FloorToInt(CurrentTime / 60);
+        float seconds = Mathf.FloorToInt(CurrentTime % 60);
+    }
 }
