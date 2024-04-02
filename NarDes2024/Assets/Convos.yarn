@@ -1,5 +1,170 @@
-﻿title: Convos
+title: Convos
 tags:
+position: -112,-138
 ---
-person1: blalblabla
+Quinn: *Yawns*
+Quinn: Good morning world.
+Quinn: So much to do, so little time. Let's see..
+Cat: Meooow!
+Quinn: Yeah, yeah.. I'm coming.
+===
+title: MomCall1
+position: 86,-139
+---
+The phone rings.
+Mom: Hello? Quinn? Are you there?
+Quinn: Hi, mom.
+Mom: Ah, Quinn, it's so nice to hear your voice.
+Quinn: ...
+Mom: So, you've decided to not call your poor mother anymore?
+Mom: I was worried sick, you know. You didn't call once last week!
+Quinn: Yeah, sorry. I just kind of forg-
+Mom: For all I know you could've been laying dead in a ditch somewhere!
+Mom: I almost drove those two hours all the way to your apartment to check up on you.
+Quinn: Mom, I'm 25. I can care for myself. Besides-
+Mom: I'm starting to doubt that.. You were always such a forgetful young kid.
+Quinn: Yeah, ten years ago.
+Quinn: I'm doing just fine. I'm busy running errands, actually, so is there anything important going on?
+Mom: I just wanted to hear your voice. I was thinking..
+Quinn: Yeah?
+Mom: What if I come over for my birthday? Let's have some tea at your apartment.
+Quinn: Oh, uh. Yeah, sure. That's fine.
+Mom: Great! Call me back when you've got time today ok? We can talk about the details then.
+Quinn: Will do mom, talk to you in a bit.
+*Click*
+===
+title: CallMomTask1
+position: 87,-11
+---
+Quinn: Mom?
+Mom: Ah, there you are again. 
+Quinn: I don't forget THAT easily.
+Quinn: ..Do I?
+Mom: So, how are the errands coming along?
+Quinn: Just fine.
+Mom: Oh, I forgot, have you heard about how rent's rising for a lot of students?
+Mom: You aren't one of them, are you? I mean, you have a great job, so it shouldn't matter.
+Quinn: No, rent's not rising for me. And actually, about that job-
+Mom: You don't forget to pay your rent do you? You have to pay those bills on time. I can't have you getting evicted.
+Quinn: Forget it.. I'll remember to pay my bills, mom. Don't worry so much.
+Mom: Good, good. So, what'd we have to talk about again?
+Quinn: ...
+Mom: Well if it was important we'd know. I've gotta hang, dear. Yoga class is starting!
+Quinn: Right. Have fun, mom.
+*click*
+===
+title: LostPhone
+position: 86,-267
+---
+Quinn: I haven't used my phone all day. That must be a personal record.
+Quinn: ...
+Quinn: Where IS my phone? Did I leave it in the bathroom last night?
+===
+title: Day1EndNormal
+position: 284,-215
+---
+Quinn: I think that's everything.
+Quinn: Yeah, it must be..
+As it gets dark outside, Quinn grows tired.
+Quinn: Time for bed.
+===
+title: Day1EndAlt
+position: 286,-89
+---
+Quinn: I think that's everything.
+Quinn: Is it? Yeah, it must be..
+As it gets dark outside, Quinn grows tired.
+Quinn: Time for bed.
+...
+3 A.M. 
+*BEEP* *BEEP* *BEEP* 
+Quinn: Huh..? 
+Quinn: .. Shit! Jesus! The smoke alarm?!
+Quinn: I left the pan on the stove..? 
+Quinn: ...
+Quinn: If I sleep through that alarm next time my house'll burn to the ground.
+Quinn: Oh, and the battery's dead, too.
+Quinn: I should change the battery tomorrow.
+Quinn: I really thought I'd finished all my tasks.
+===
+title: FireEnding
+position: 707,-179
+---
+Quinn: I think that's everything.
+Quinn: Is it? Yeah, it must be..
+As it gets dark outside, Quinn grows tired.
+Quinn: Time for bed.
+...
+3 A.M. 
+Cat: Meooooow!
+Smoke fills the room. Quinn's cat jumps on the bed, waking them up.
+Quinn: Hm? What is it..
+Quinn: Oh my god. No! No nonononono..!
+Quinn grabs the cat, opens their window and gets out of the apartment.
+Quinn: My house.. All my stuff..
+Quinn: Mom's gonna be so mad. I should call her. I should call the fire department!
+Quinn scrambles to find their phone. 
+Quinn: Shit! It's still in the apartment, what do I do?!
+===
+title: EvictionEnding
+position: 707,-52
+---
+Quinn: I think that's everything.
+Quinn: Is it? Yeah, it must be..
+As it gets dark outside, Quinn grows tired.
+Quinn: Time for bed.
+...
+8 A.M.
+The doorbell rings.
+Quinn: Mail? I never get any letters.
+Quinn walks towards the door and sees a large, blue envelope laying on the ground.
+Quinn: That's from my landlord.
+Quinn opens the letter and reads it.
+Quinn: I'm getting evicted?! Why?
+Cat: Meooow!
+Quinn: Not now!
+Quinn: ...
+Quinn: I forgot to pay my rent. Twice.
+Quinn: Mom's gonna be so mad. 
+===
+title: NoMomEnding
+position: 708,74
+---
+8 A.M.
+Quinn: Drinks on the table.. Pie in the fridge.. Present on the table..
+Quinn: ...
+Quinn: I feel like that's everything, right?
+Quinn: Well, cat, now we wait on mom.
+Cat: Meoow!
+...
+10 A.M.
+...
+1 P.M.
+Quinn: She should've been here three hours ago.
+...
+Quinn: I should call her.
+*Ring, ring..*
+Mom: Yes?
+Quinn: Mom! Happy birthday, when are you coming?
+Mom: It's been two weeks since you last called, Quinn. 
+Quinn: Oh, uh. Yeah, sorry about that.
+Mom: I assumed you didn't want me to come.
+...
+Quinn: I have everything set up for you to come.
+Mom: Well, I've made other plans now, Quinn.
+...
+Quinn: Oh. No, that's okay.. I figured. I'm sorry.
+Mom: We'll talk about this later.
+Quinn: Okay. Have a nice day, mom.
+*Click* 
+===
+title: NeutralEnding
+position: 708,201
+---
+8 A.M.
+Quinn: Drinks on the table.. Pie in the fridge.. Present on the table..
+Quinn: ...
+Quinn: I feel like that's everything, right?
+Quinn: Well, cat, now we wait on mom.
+Cat: Meoow!
 ===
