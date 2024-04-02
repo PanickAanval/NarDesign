@@ -930,7 +930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a4117262781e9f4683166388c9e54cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeLeft: 10
+  TimeLeft: 999
   NextScene: Day2
   TimerText: {fileID: 347301075}
 --- !u!4 &1580206758

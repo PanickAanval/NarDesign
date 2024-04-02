@@ -67,6 +67,7 @@ Quinn: I think that's everything.
 Quinn: Yeah, it must be..
 As it gets dark outside, Quinn grows tired.
 Quinn: Time for bed.
+<<ToNextDay TwoPersonDialogue Day2>>
 ===
 title: Day1EndAlt
 position: 286,-89
@@ -86,6 +87,7 @@ Quinn: If I sleep through that alarm next time my house'll burn to the ground.
 Quinn: Oh, and the battery's dead, too.
 Quinn: I should change the battery tomorrow.
 Quinn: I really thought I'd finished all my tasks.
+<<ToNextDay TwoPersonDialogue Day2>>
 ===
 title: FireEnding
 position: 707,-179

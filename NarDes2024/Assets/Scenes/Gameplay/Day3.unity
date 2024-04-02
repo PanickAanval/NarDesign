@@ -942,7 +942,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1716,7 +1716,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1806,7 +1806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a4117262781e9f4683166388c9e54cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeLeft: 240
+  TimeLeft: 10
   NextScene: Day4Check
   TimerText: {fileID: 1148182860}
 --- !u!4 &246871190
@@ -4177,15 +4177,15 @@ MonoBehaviour:
   PlayerCalledMom: 0
   CatRanAway: 0
   OffStoveGetsRemovedFaster: 0
-  NormDay1End: 
-  AltDay1End: 
-  FireEnd: 
-  EvicEnd: 
-  NormDay2End: 
-  NoMomEnd: 
-  NoPresentEnd: 
-  NeutralEnd: 
-  GoodEnd: 
+  NormDay1End: Day1EndNormal
+  AltDay1End: Day1EndAlternative
+  FireEnd: FireEnding
+  EvicEnd: EvictionEnding
+  NormDay2End: Day2EndNormal
+  NoMomEnd: NoMomEnding
+  NoPresentEnd: NoPresentEnding
+  NeutralEnd: NeutralEnding
+  GoodEnd: GoodEnding
 --- !u!4 &670390820
 Transform:
   m_ObjectHideFlags: 0
@@ -4264,7 +4264,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5057,7 +5057,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11792,7 +11792,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12043,7 +12043,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13032,6 +13032,18 @@ PrefabInstance:
       propertyPath: taskKeeper
       value: 
       objectReference: {fileID: 670390819}
+    - target: {fileID: 4270948904714492390, guid: 3dbedda24c520014989f2f36a189ea60, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270948904714492390, guid: 3dbedda24c520014989f2f36a189ea60, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270948904714492390, guid: 3dbedda24c520014989f2f36a189ea60, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 4881421743233105751, guid: 3dbedda24c520014989f2f36a189ea60, type: 3}
       propertyPath: m_CameraType
       value: 0

@@ -173,6 +173,7 @@ public class TaskKeeper : MonoBehaviour
                 //go to good end
                 SceneManager.LoadScene(GoodEnd);
             }
+            Debug.Log("je mama");
         }
 
         if (scene.name == "MainMenu")

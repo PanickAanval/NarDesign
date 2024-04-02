@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using Yarn;
 using Yarn.Unity;
+using UnityEngine.SceneManagement;
 
 public class TwoPersonDialogueView : DialogueViewBase
 {
@@ -48,6 +49,12 @@ public class TwoPersonDialogueView : DialogueViewBase
     public void FadeOutAndIn(float time)
     {
         StartCoroutine(FadeToNextNode(time));
+    }
+    
+    [YarnCommand("ToNextDay")]
+    public void ToNextDay(string scenename)
+    {
+        SceneManager.LoadScene("Day2");    
     }
 
     private IEnumerator FadeToNextNode(float time)
