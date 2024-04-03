@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Character 2
   m_EditorClassIdentifier: 
   characterName: Mom
-  talkingSprite: {fileID: 21300000, guid: 24846077a51260c4896a8cf1a2c6bb71, type: 3}
+  talkingSprite: {fileID: 21300000, guid: fe1f8a12144a45e438ced0195e7dc5dc, type: 3}
   nameColor: {r: 0.5943396, g: 0.1541919, b: 0.1541919, a: 1}
-  textColor: {r: 1, g: 0.495283, b: 0.5760458, a: 1}
+  textColor: {r: 0.64779866, g: 0.08759529, b: 0.17879122, a: 1}

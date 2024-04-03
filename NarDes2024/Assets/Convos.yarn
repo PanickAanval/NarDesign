@@ -90,7 +90,7 @@ Quinn: I really thought I'd finished all my tasks.
 <<ToNextDay TwoPersonDialogue Day2>>
 ===
 title: FireEnding
-position: 707,-179
+position: 1342,-391
 ---
 Quinn: I think that's everything.
 Quinn: Is it? Yeah, it must be..
@@ -107,9 +107,10 @@ Quinn: My house.. All my stuff..
 Quinn: Mom's gonna be so mad. I should call her. I should call the fire department!
 Quinn scrambles to find their phone. 
 Quinn: Shit! It's still in the apartment, what do I do?!
+<<ToNextDay TwoPersonDialogue MainMenu>>
 ===
 title: EvictionEnding
-position: 707,-52
+position: 1342,-264
 ---
 Quinn: I think that's everything.
 Quinn: Is it? Yeah, it must be..
@@ -128,9 +129,10 @@ Quinn: Not now!
 Quinn: ...
 Quinn: I forgot to pay my rent. Twice.
 Quinn: Mom's gonna be so mad. 
+<<ToNextDay TwoPersonDialogue MainMenu>>
 ===
 title: NoMomEnding
-position: 708,74
+position: 1343,-138
 ---
 8 A.M.
 Quinn: Drinks on the table.. Pie in the fridge.. Present on the table..
@@ -159,9 +161,10 @@ Quinn: Oh. No, that's okay.. I figured. I'm sorry.
 Mom: We'll talk about this later.
 Quinn: Okay. Have a nice day, mom.
 *Click* 
+<<ToNextDay TwoPersonDialogue MainMenu>>
 ===
 title: NeutralEnding
-position: 708,201
+position: 1344,-11
 ---
 8 A.M.
 Quinn: Drinks on the table.. Pie in the fridge.. Present on the table..
@@ -169,4 +172,152 @@ Quinn: ...
 Quinn: I feel like that's everything, right?
 Quinn: Well, cat, now we wait on mom.
 Cat: Meoow!
+10 A.M.
+Mom: Quinn, dear! I'm here! Open the door for an old woman, will you?
+The door creaks.
+Quinn: Hey, mom. Welcome in my humble abode.
+Mom: Oh, wow. This is certainly.. cute.
+Mom: I thought you said you'd clean up the place?
+Quinn: Well, you said that.. But I forgot, I'm sorry.
+Mom: I figured. 
+...
+Mom: You should start seeing that therapist again, you know.
+Quinn: ...
+Mom: I'm worried, Quinn. You're not improving.
+Quinn: Yeah. I'm sorry. It's been hard.
+Quinn: Do you.. Do you think you could call a little more?
+Mom: ...
+Mom: Why?
+Quinn: I just need some reminders sometimes.
+Quinn: And I miss you.
+Mom: I'll call more.
+Quinn: Thanks, mom.
+Quinn: I, uh.. Bought your favourite pie. And a present.
+Quinn: Enjoy.
+Quinn and their mom had an alright day. Quinn feels guilty.
+<<ToNextDay TwoPersonDialogue MainMenu>>
 ===
+title: LostPhone2
+position: 483,-257
+---
+Quinn: ...
+Quinn: I've lost my phone again.
+Quinn: It shouldn't be in the bathroom this time, I've learned my lesson.
+===
+title: CallMomTask2
+position: 484,-133
+---
+Quinn: Hi, mom.
+Mom: Good morning, dear. 
+Mom: So how's the day coming along?
+Mom: Still working on your memory-thing with that therapist of yours?
+Quinn: Well.. No. I've been trying to manage on my own.
+Mom: Oh, good. I always doubted that therapist. I feel like-
+Mom: ..
+Mom: I just feel like you should be able to manage on your own, you know?
+Quinn: Ah.
+Mom: Maybe keep a list of your tasks with you! Like a little notebook!
+Quinn: Mom, I'm 25. That feels a little childish.
+Quinn: I can do it on my own.
+Mom: Well, if you say so, dear.
+*Click*
+===
+title: Day2EndNormal
+position: 683,-203
+---
+Quinn: I think that's everything.
+Quinn: Yeah, it must be..
+As it gets dark outside, Quinn grows tired.
+Quinn: Time for bed.
+Quinn: ...
+Quinn: Maybe I should be keeping a list of my tasks.
+Quinn: I should be able to do all of this on my own, though.
+Quinn: ...
+Quinn: I'll think about it tomorrow.
+<<ToNextDay TwoPersonDialogue Day3>>
+===
+title: SmokeAlarm
+position: 484,-6
+---
+The smoke alarm beeps. It's empty.
+Quinn: Hm.
+Cat: Meow!
+===
+title: CallMomTask3
+position: 883,-263
+---
+Quinn: Good morning, mom.
+Mom: Morning, dear! 
+Mom: Are you excited for my visit next week?
+Mom: I sure am excited. I can't wait to see what present you've got for me.
+Quinn: Yeah, I'm excited for you to come.
+Mom: You should clean everything before I come, you know.
+Mom: It's a hospitable thing to do, have a clean room.
+Quinn: Uh-huh.
+Quinn: I gotta finish my errands, mom, sorry.
+Mom: It's ok, dear. Glad you called!
+*Click*
+===
+title: GoodEnding
+position: 1344,114
+---
+8 A.M.
+Quinn: Drinks on the table.. Pie in the fridge.. Present on the table..
+Quinn: ...
+Quinn: I feel like that's everything, right?
+Quinn: Well, cat, now we wait on mom.
+Cat: Meoow!
+10 A.M.
+Mom: Quinn, dear! I'm here! Open the door for an old woman, will you?
+The door creaks.
+Quinn: Hey, mom. Welcome in my humble abode.
+Mom: Oh, what a beautiful place you've got.
+Mom: I see you listened to my advice! Everything's so neat, dear.
+Mom: ...
+Mom: I'm glad to see you're doing better, you know.
+Mom: The whole memory-thing had me concerned for you.. Living on your own with that..
+Quinn: I know. It's been going a little better lately. 
+Quinn: ...
+Quinn: I really just want to be able to live a normal life, you know?
+Mom: Oh dear, I know.
+Quinn: Could you, you know-
+Quinn: Check in with me a little more?
+...
+Mom: Of course, dear.
+Quinn: Thanks, mom. By the way, I bought a pie. And here's your present.
+Mom: Ah, wonderful! My favourite pie, too, I see. Such a smart young adult you are.
+Quinn: Hah. Open your present.. I'm scared you won't like it.
+Mom: Yeah, yeah! 
+...
+Quinn and their mom have a good time.
+<<ToNextDay TwoPersonDialogue MainMenu>>
+===
+title: NoPresentEnding
+position: 1343,243
+---
+8 A.M.
+Quinn: Drinks on the table.. Pie in the fridge.. Present on the table..
+Quinn: ...
+Quinn: I feel like that's everything, right?
+Quinn: Well, cat, now we wait on mom.
+Cat: Meoow!
+10 A.M.
+Mom: Quinn, dear! I'm here! Open the door for an old woman, will you?
+The door creaks.
+Quinn: Hey, mom. Welcome in my humble abode.
+Mom: So! Happy birthday, me!
+Quinn: Yeah, happy birthday.
+...
+Quinn: Why are you looking at me like that?
+Mom: I'm waiting for you to tell me what you got me!
+Quinn: ... Shit.
+Mom: Quinn! Language!
+Mom: I can't believe you forgot my present.
+Quinn: Well.. I bought you a pie? If that helps.
+Quinn: I'm sorry, mom. Really, I am. 
+Mom: I know how you get, dear. 
+Quinn: I think I need more help.
+Quinn: You know, with the whole.. Forgetting thing.
+<<ToNextDay TwoPersonDialogue MainMenu>>
+===
+

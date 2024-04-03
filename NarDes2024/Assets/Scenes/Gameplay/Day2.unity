@@ -3688,6 +3688,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8124600502851894065, guid: 76b130ee538cc1b4c8adec6c6771252a, type: 3}
+      propertyPath: DidCom
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124600502851894065, guid: 76b130ee538cc1b4c8adec6c6771252a, type: 3}
+      propertyPath: DidFire
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124600502851894065, guid: 76b130ee538cc1b4c8adec6c6771252a, type: 3}
+      propertyPath: DidPan1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124600502851894065, guid: 76b130ee538cc1b4c8adec6c6771252a, type: 3}
+      propertyPath: DidPan2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124600502851894065, guid: 76b130ee538cc1b4c8adec6c6771252a, type: 3}
+      propertyPath: DidPhone
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124600502851894065, guid: 76b130ee538cc1b4c8adec6c6771252a, type: 3}
+      propertyPath: PlayerCalledMom
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
