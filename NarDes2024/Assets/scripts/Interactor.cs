@@ -24,9 +24,9 @@ public class Interactor : MonoBehaviour
     {
         circle.SetActive(false);
 
-        if (timeBetweenTimers != 15f)
+        if (timeBetweenTimers != 7f)
         {
-            timeBetweenTimers = 15f;
+            timeBetweenTimers = 7f;
         }
 
         GameObject.Find("keeper");
@@ -38,16 +38,16 @@ public class Interactor : MonoBehaviour
 
         if(TaskKeeper.keeper.InteractTimerIncreases == 1)
         {
-            if (timeBetweenTimers != 20f)
+            if (timeBetweenTimers != 10f)
             {
-                timeBetweenTimers = 20f;
+                timeBetweenTimers = 10f;
             }
         }
         if(TaskKeeper.keeper.InteractTimerIncreases == 2)
         {
-            if (timeBetweenTimers != 25f)
+            if (timeBetweenTimers != 15f)
             {
-                timeBetweenTimers = 25f;
+                timeBetweenTimers = 15f;
             }
         }
 

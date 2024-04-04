@@ -21,9 +21,9 @@ public class InteractVisual : MonoBehaviour
     {
         holdDuration = interactor.timeBetweenTimers;
 
-        if (holdDuration != 15f)
+        if (holdDuration != 7f)
         {
-            holdDuration = 15f;
+            holdDuration = 7f;
         }
 
         GameObject.Find("keeper");
@@ -34,16 +34,16 @@ public class InteractVisual : MonoBehaviour
     {
         if (TaskKeeper.keeper.InteractTimerIncreases == 1)
         {
-            if (holdDuration != 20f)
+            if (holdDuration != 10f)
             {
-                holdDuration = 20f;
+                holdDuration = 10f;
             }
         }
         if (TaskKeeper.keeper.InteractTimerIncreases == 2)
         {
-            if (holdDuration != 25f)
+            if (holdDuration != 15f)
             {
-                holdDuration = 25f;
+                holdDuration = 15f;
             }
         }
 
