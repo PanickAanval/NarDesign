@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Endings/NoPresentEnding.unity
     guid: 19064f0c7a62d5944a065f219c38c460
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: ebee8d3302ee76f409c7a7c766df6f7f
   m_configObjects: {}

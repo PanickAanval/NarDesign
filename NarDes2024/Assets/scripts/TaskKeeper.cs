@@ -115,7 +115,7 @@ public class TaskKeeper : MonoBehaviour
                 CatRanAway = 1;
             }
 
-            if (DidPan2 == 1 && DidCom == 1 && DidFire == 1)
+            if (DidPan2 == 1 && DidCom == 1)
             {
                 //load normal day 2 dialogue (player did all tasks that would otherwise give them a game over)
                 SceneManager.LoadScene(NormDay2End);

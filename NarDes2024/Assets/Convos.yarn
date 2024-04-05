@@ -234,10 +234,10 @@ Quinn: Maybe I should be keeping a list of my tasks.
 Quinn: I should be able to do all of this on my own, though.
 Quinn: ...
 Quinn: I'll think about it tomorrow.
-<<ToNextDay TwoPersonDialogue Day3>>
+
 ===
 title: SmokeAlarm
-position: 484,-6
+position: 485,-8
 ---
 The smoke alarm beeps. It's empty.
 Quinn: Hm.

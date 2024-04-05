@@ -54,7 +54,7 @@ public class TwoPersonDialogueView : DialogueViewBase
     [YarnCommand("ToNextDay")]
     public void ToNextDay(string scenename)
     {
-        SceneManager.LoadScene("Day2");    
+        SceneManager.LoadScene(scenename);    
     }
 
     private IEnumerator FadeToNextNode(float time)
