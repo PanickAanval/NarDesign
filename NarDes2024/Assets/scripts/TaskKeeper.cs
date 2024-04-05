@@ -54,6 +54,11 @@ public class TaskKeeper : MonoBehaviour
        // Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "Day2Check")
         {
+            if (DidPhone == 1)
+            {
+                PlayerCalledMom = PlayerCalledMom + 1;
+            }
+
             if (DidPhone == 0 || DidPan1 == 0 || DidDishes == 0 || DidBed == 0)
             {
                 //timer for tasks becomes longer
@@ -72,6 +77,8 @@ public class TaskKeeper : MonoBehaviour
                 SceneManager.LoadScene(NormDay1End);
             }
 
+            
+
         }
 
         if (scene.name == "Day2")
@@ -89,6 +96,11 @@ public class TaskKeeper : MonoBehaviour
 
         if (scene.name == "Day3Check")
         {
+            if (DidPhone == 1)
+            {
+                PlayerCalledMom = PlayerCalledMom + 1;
+            }
+
             if (DidPhone == 0 || DidPan1 == 0 || DidDishes == 0 || DidBed == 0)
             {
                 //timer for tasks becomes longer
@@ -137,6 +149,10 @@ public class TaskKeeper : MonoBehaviour
 
         if (scene.name == "Day4Check")
         {
+            if (DidPhone == 1)
+            {
+                PlayerCalledMom = PlayerCalledMom + 1;
+            }
 
             if (DidPan2 == 0)
             {
@@ -162,7 +178,7 @@ public class TaskKeeper : MonoBehaviour
                 SceneManager.LoadScene(NoPresentEnd);
             }
 
-            if (DidPhone == 0 || DidPan1 == 0 || DidDishes == 0 || DidBed == 0 || DidCat == 0)
+            if (DidPhone == 0 || DidPan1 == 0 || DidDishes == 0 || DidBed == 0 || DidCat == 0 && PlayerCalledMom >= 1)
             {
                 //go to neutral end
                 SceneManager.LoadScene(NeutralEnd);

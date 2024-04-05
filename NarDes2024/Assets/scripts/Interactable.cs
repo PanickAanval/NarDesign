@@ -140,6 +140,7 @@ public class Interactable : MonoBehaviour
             TaskKeeper.keeper.DidFire = 1;
 
             tasks.Tasks.Remove("FireAlarm");
+            tasks.Tasks.Remove("BuyPresent");
             tasks.fireAlarm.SetActive(true);
             FireCompelte.SetActive(true);
         }
@@ -148,6 +149,7 @@ public class Interactable : MonoBehaviour
             TaskKeeper.keeper.DidDoor = 1;
 
             tasks.Tasks.Remove("BuyPresent");
+            tasks.Tasks.Remove("FireAlarm");
             tasks.buyPresent.SetActive(true);
             DoorComplete.SetActive(true);
         }
